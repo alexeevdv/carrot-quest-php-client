@@ -26,3 +26,22 @@ or add
 ```
 
 to the ```require``` section of your `composer.json` file.
+
+## Configuration
+
+```php
+
+```
+
+## Implemented methods
+
+### Setting user properties
+
+https://carrotquest.io/developers/endpoints/users/props/
+
+```php
+interface ClientInterface
+{
+    public function userSetProperties(int $userId, array $properties, $isCarrotQuestUser = true): void;
+}
+```
