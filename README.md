@@ -30,7 +30,14 @@ to the ```require``` section of your `composer.json` file.
 ## Configuration
 
 ```php
+$guzzle = new \GuzzleHttp\Client([
+    'base_uri' => 'https://api.carrotquest.io',
+]);
 
+$apiClient = new \alexeevdv\CarrotQuest\Client(
+    'your_auth_token_goes_here',
+    $guzzle
+);
 ```
 
 ## Implemented methods
