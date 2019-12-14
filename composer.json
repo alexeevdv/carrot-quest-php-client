@@ -10,9 +10,11 @@
   },
   "require": {
     "php": ">=7.1",
+    "ext-json": "*",
     "guzzlehttp/guzzle": "^6.0"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "^3.5"
+    "squizlabs/php_codesniffer": "^3.5",
+    "codeception/codeception": "^3.1"
   }
 }

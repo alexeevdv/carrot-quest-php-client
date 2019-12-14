@@ -10,7 +10,7 @@ install:
 
 script:
   - vendor/bin/phpcs --standard=PSR12 src
-#  - php vendor/bin/codecept run --coverage --coverage-xml
+  - php vendor/bin/codecept run --coverage --coverage-xml
 
-#after_success:
-#  - bash <(curl -s https://codecov.io/bash)
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
